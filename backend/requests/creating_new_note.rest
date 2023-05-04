@@ -1,16 +1,18 @@
-POST http://localhost:3001/api/notes
-Content-Type: application/json
-
-{
-  "content": "Ensure that everything still works45",
-  "important": true
-}
-
 ###
 POST http://localhost:3001/api/notes
 Content-Type: application/json
 
 {
   "content": "fail",
+  "important": true
+}
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY0NTBjNmQ1NzliNWJhNzRjZjk2ZmEwNSIsImlhdCI6MTY4MzE5NjE5N30.WpHg_DF8l5KOgCDXxQHL9eWaW3ZVZr_bLOuTWxDrPJc
+
+{
+  "content": "testing with bearer123",
   "important": true
 }
