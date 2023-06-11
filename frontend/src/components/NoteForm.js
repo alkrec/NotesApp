@@ -6,13 +6,13 @@ const NoteForm = (props) => {
 
   const addNote = (event) => {
     event.preventDefault()
-    
+
     createNote({
       content: newNote,
       important: true
     })
 
-  setNewNote('')
+    setNewNote('')
   }
 
   return (
